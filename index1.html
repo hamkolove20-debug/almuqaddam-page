@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>رابط فيس بوك</title>
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --text:#e5e7eb;
+      --accent:#1877f2;
+      --accent-hover:#166fe5;
+      --phone:#10b981;
+      --phone-hover:#0ea57a;
+      --map:#facc15;
+      --map-hover:#eab308;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      background:radial-gradient(60% 60% at 50% 30%, #1f2937 0%, #0b1020 60%, #060913 100%);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Kufi Arabic, "Noto Sans Arabic", Arial, sans-serif;
+      color:var(--text);
+    }
+    .card{
+      width:min(520px, 92vw);
+      background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:20px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.03);
+      backdrop-filter: blur(6px);
+    }
+    .title{
+      margin:0 0 10px;
+      font-size:clamp(20px, 2.6vw, 26px);
+      line-height:1.4;
+    }
+    .note{
+      margin:0 0 18px;
+      opacity:.85;
+      font-size:clamp(14px, 2vw, 16px);
+    }
+    .btns{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .fb-btn, .phone-btn, .map-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      padding:14px 18px;
+      border-radius:14px;
+      color:white;
+      text-decoration:none;
+      font-weight:700;
+      font-size:clamp(14px, 2vw, 16px);
+      border:0;
+      cursor:pointer;
+      transition: transform .06s ease, background .2s ease, box-shadow .2s ease;
+    }
+    .fb-btn{
+      background:var(--accent);
+      box-shadow: 0 8px 18px rgba(24,119,242,.35);
+    }
+    .fb-btn:hover{ background:var(--accent-hover); transform: translateY(-1px); }
+
+    .phone-btn{
+      background:var(--phone);
+      box-shadow: 0 8px 18px rgba(16,185,129,.35);
+    }
+    .phone-btn:hover{ background:var(--phone-hover); transform: translateY(-1px); }
+
+    .map-btn{
+      background:var(--map);
+      color:#1f2937;
+      box-shadow: 0 8px 18px rgba(250,204,21,.35);
+    }
+    .map-btn:hover{ background:var(--map-hover); transform: translateY(-1px); }
+
+    .fb-icon, .phone-icon, .map-icon{
+      width:26px; height:26px; display:block;
+    }
+
+    .footer{
+      margin-top:16px;
+      font-size:13px;
+      opacity:.75;
+    }
+    code{background:rgba(255,255,255,.06); padding:2px 6px; border-radius:8px}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1 class="title">شركه المقدام للمقاولات والبناء الحديث</h1>
+    <p class="note">صفحتنا على الفيس بوك ورقم الهاتف والموقع</p>
+
+    <div class="btns">
+      <!-- زر فيس بوك -->
+      <a class="fb-btn" href="https://www.facebook.com/share/1CwW8DVGfu/" target="_blank" rel="noopener noreferrer" aria-label="فيس بوك">
+        <svg class="fb-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M24 12.073C24 5.407 18.627 0 12 0S0 5.407 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078V12.07h3.047V9.41c0-3.007 1.792-4.668 4.533-4.668 1.313 0 2.687.235 2.687.235v2.97h-1.515c-1.494 0-1.958.931-1.958 1.887v2.234h3.328l-.532 3.493h-2.796V24C19.612 23.094 24 18.1 24 12.073z" fill="white"/>
+        </svg>
+        فيس بوك
+      </a>
+
+      <!-- زر رقم الهاتف -->
+      <a class="phone-btn" href="tel:07736265039" aria-label="اتصال">
+        <svg class="phone-icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24 11.72 11.72 0 003.68.59 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.25a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.05l-2.2 2.2z"/>
+        </svg>
+        اتصل بنا
+      </a>
+
+      <!-- زر الموقع -->
+      <a class="map-btn" href="https://www.google.com/maps?q=33.3128,44.3615" target="_blank" rel="noopener noreferrer" aria-label="الموقع">
+        <svg class="map-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.38 0-2.5-1.121-2.5-2.5S10.62 6.5 12 6.5s2.5 1.121 2.5 2.5S13.38 11.5 12 11.5z"/>
+        </svg>
+        الموقع
+      </a>
+    </div>
+
+    <p class="footer">
+      رقم الهاتف: <code>07736265039</code>
+    </p>
+  </main>
+</body>
+</html>
